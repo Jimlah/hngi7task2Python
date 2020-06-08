@@ -28,6 +28,8 @@
    python app/api.py
    ~~~
    
+   Visit 127.0.0.1:5000/docs/
+   
 
 - Fork this repo
 - Checkout develop branch
