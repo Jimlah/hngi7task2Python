@@ -17,4 +17,5 @@
 #### Todo
 
 - A more precise readme.md
+- Set up boilerplate
 - Tests
