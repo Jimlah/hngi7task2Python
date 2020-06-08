@@ -1,34 +1,26 @@
 from flask import Flask
-from flask_restful import Resource, Api
+from flask_restx import Resource, Api
 
-app = Flask(__name__)
-api = Api(app)
+app = Flask(__name__)  # Create a Flask WSGI application
+api = Api(app, doc='/docs')  # Create a Flask-RESTPlus API
+ns_conf = api.namespace('', description='Image Resizer operations')
 
 
-class HelloWorld(Resource):
-    def get(self):
+@ns_conf.route('/image/')  # Create a URL route to this resource
+class ImageResizer(Resource):  # Create a RESTful resource
+    def get(self):  # Create GET endpoint
         """
-        Get each image using id
-        :return: Resized image link, image name, size and other metadata
+
+        :return: The image queried
         """
         return {'hello': 'world'}
 
     def post(self):
         """
-        POST request to the API
-        :return: Resized image link, image name, size and other metadata
-        """
-        pass
 
-    def list(self):
+        :return: Image created
         """
-        List all images
-        :return: All images, with their name and size
-        """
-        pass
 
-
-api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
     app.run(debug=True)
