@@ -4,6 +4,31 @@
 
 
 
+### Setting up
+
+- Clone this repository
+- Create a python3 virtual environment(This is not compulsory)
+- Run the following command
+~~~
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+python app/api.py
+~~~
+
+- Navigate to http://127.0.0.1:5000/docs
+- Upload an image file, select width and height and execute
+
+##### Response
+
+- **url**: A link to your resized image
+- **filename**: Your uploaded file name
+- **height**: New image height
+- **width**: New image width
+- **created_at**: Timestamp
+- **success**: A boolean
+
+
 
 
 
