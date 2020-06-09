@@ -1,4 +1,4 @@
-import resizer
+from app import resizer
 from flask import Flask, request
 from flask_cors import CORS
 from flask_restx import Resource, Api, reqparse
@@ -50,4 +50,4 @@ class ImageResizer(Resource):  # Create a RESTful resource
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
