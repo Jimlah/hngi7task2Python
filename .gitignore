@@ -1,0 +1,3 @@
+py37/
+*app/image
+*app/__pycache__
