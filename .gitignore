@@ -1,3 +1,4 @@
 py37/
 *app/image
 *app/__pycache__
+app/Thumbs.db
