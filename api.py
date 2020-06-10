@@ -18,13 +18,6 @@ upload_parser.add_argument('height', type=int, required=False)
 
 @ns_conf.route('/image/')  # Create a URL route to this resource
 class ImageResizer(Resource):  # Create a RESTful resource
-    def get(self):  # Create GET endpoint
-        """
-
-        :return: The image queried
-        """
-        return {'hello': 'world'}
-
     @ns_conf.expect(upload_parser)
     def post(self):
         """

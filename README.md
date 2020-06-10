@@ -6,6 +6,8 @@
 
 ### Setting up
 
+#### Pythonic way
+
 - Clone this repository
 - Create a python3 virtual environment(This is not compulsory)
 - Run the following command
@@ -18,6 +20,19 @@ python app/api.py
 
 - Navigate to http://127.0.0.1:5000/docs
 - Upload an image file, select width and height and execute
+
+#### Docker
+
+- Install docker from here https://docs.docker.com/get-docker/
+- Install Docker Compose from here https://docs.docker.com/compose/install/
+
+- Make sure you are in root folder of this repo
+
+- run docker-compose up
+
+Visit http:///0.0.0.0:5000/docs/
+
+
 
 ##### Response
 
@@ -53,18 +68,20 @@ python app/api.py
    python app/api.py
    ~~~
    
-   Visit 127.0.0.1:5000/docs/
+   Visit http:///0.0.0.0:5000/docs/
    
+
+
+
+
+#### Notes
+
+##### Contributing
 
 - Fork this repo
 - Checkout develop branch
 - Update the codes
 - Push and raise a Pull request which will be attended to by managers
-
-
-#### Notes
-
-##### For the API guys
 
 You will work in the app/api.py file, the resizer.py where all the functions(Or class) will be
 
